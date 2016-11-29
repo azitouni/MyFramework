@@ -13,7 +13,7 @@ var Calculator = {
     var sent_digit = JSON.stringify(digit);
     var sent_operator = JSON.stringify(operator);
      $.ajax({
-        url : 'index.php?controller=compute&action=' + operator[0],
+        url : 'index.php?controller=compute&action=traitement',// + operator[0],
         type : 'GET',
         dataType : 'JSON',
         data: {
